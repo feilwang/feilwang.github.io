@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>qap h5</title>
+    <script src="https://g.alicdn.com/x-bridge/qap-sdk/2.4.1/qn.min.js"></script>
+</head>
+<body>
+h5 content!
+</body>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        QN.on('Page.h5', function(data){
+            alert(data);
+            document.body.innerHTML = data;
+        });
+    }, false);
+</script>
+</html>
